@@ -13,8 +13,8 @@ env = gym.make("Pendulum-v1")
 GAMMA = 0.99
 LAMBDA = 0.95
 CLIP_EPS = 0.2
-ACTOR_LR = 0.0006  # default=0.0003
-CRITIC_LR = 0.001
+ACTOR_LR = 0.0003  # default=0.0003
+CRITIC_LR = 0.001  # default=0.001
 EPOCHS = 10
 BATCH_SIZE = 64   # take BATCH_SIZE out of STEPS_PER_UPDATE data to train.
 STEPS_PER_UPDATE = 1024  # default=2048
