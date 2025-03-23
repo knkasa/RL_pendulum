@@ -192,7 +192,7 @@ class PPOAgent:
             if episode_reward > best_reward:
                 best_reward = episode_reward
             
-            print(f"Episode {episode+1}, Reward: {episode_reward:.2f}, Avg Reward (last 10): {avg_reward:.2f}, Best Reward: {best_reward:.2f} (Claude+chatGPT)")
+            print(f"Episode {episode+1}, Reward: {episode_reward:.2f}, Avg Reward (last 10): {avg_reward:.2f}, Best Reward: {best_reward:.2f}")
             
             # Early stopping if solved
             if avg_reward > -200 and episode > 100:
