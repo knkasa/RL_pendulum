@@ -297,7 +297,7 @@ def train_sac(env_name, num_episodes=500, max_steps_per_episode=200,
         avg_rewards.append(avg_reward)
         
         # Print progress
-        print(f"Episode: {episode}, Total Steps: {total_steps}, Reward: {episode_reward:.2f}, Avg. Reward (last 10): {avg_reward:.2f} (gemini+claude)")
+        print(f"Episode: {episode}, Total Steps: {total_steps}, Reward: {episode_reward:.2f}, Avg. Reward (last 10): {avg_reward:.2f}")
         
         # Check for NaN values and reset if necessary
         if np.isnan(episode_reward) or np.isnan(avg_reward):
